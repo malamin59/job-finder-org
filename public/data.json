@@ -1,0 +1,265 @@
+
+
+[
+    {
+      "id": "1",
+      "name": "NextGen Tech",
+      "logo": "https://i.ibb.co.com/LdDLXqff/download-1.jpg",
+      "location": "New York, USA",
+      "website": "https://nextgentech.com",
+      "industry": "Software Development",
+      "jobs": [
+        {
+          "id": "job-001",
+          "title": "Frontend Developer",
+          "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Frontend_Development_Banner.jpg",
+          "location": "Remote",
+          "salary": "$70,000 - $90,000",
+          "jobType": "Full-time",
+          "description": "Build and maintain responsive web applications using modern JavaScript frameworks.",
+          "requirements": [
+            "Proficient in HTML, CSS, and JavaScript",
+            "Experience with React or Vue.js",
+            "Familiarity with RESTful APIs",
+            "Good understanding of responsive design",
+            "Excellent problem-solving skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Cloudify Labs",
+      "logo": "https://i.ibb.co.com/nsYZ4FsS/download-2.jpg",
+      "location": "Berlin, Germany",
+      "website": "https://cloudifylabs.io",
+      "industry": "Cloud Computing",
+      "jobs": [
+        {
+          "id": "job-003",
+          "title": "DevOps Engineer",
+          "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Cloud_DevOps_Banner.jpg",
+          "location": "Remote",
+          "salary": "€75,000 - €95,000",
+          "jobType": "Full-time",
+          "description": "Manage cloud infrastructure and deployment pipelines.",
+          "requirements": [
+            "Experience with AWS, Azure, or GCP",
+            "Knowledge of CI/CD tools like Jenkins or GitHub Actions",
+            "Scripting skills with Bash or Python",
+            "Infrastructure as Code (Terraform, CloudFormation)",
+            "Monitoring and logging tools (Prometheus, ELK)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Google",
+      "logo": "https://i.ibb.co.com/ZpWLf4ws/download.png",
+      "location": "Mountain View, CA, USA",
+      "website": "https://google.com",
+      "industry": "Technology",
+      "jobs": [
+        {
+          "id": "job-005",
+          "title": "Software Engineer",
+          "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Google_Dev_Banner.jpg",
+          "location": "Mountain View, CA",
+          "salary": "$100,000 - $150,000",
+          "jobType": "Full-time",
+          "description": "Develop and maintain scalable software solutions for Google's cloud infrastructure.",
+          "requirements": [
+            "Proficiency in Java, C++, or Python",
+            "Experience with distributed systems",
+            "Strong debugging and problem-solving skills",
+            "Ability to work in an agile environment",
+            "Experience with Google Cloud Platform (GCP)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Microsoft",
+      "logo": "https://i.ibb.co.com/xtdSN4j6/images.jpg",
+      "location": "Redmond, WA, USA",
+      "website": "https://microsoft.com",
+      "industry": "Technology",
+      "jobs": [
+        {
+          "id": "job-006",
+          "title": "Backend Developer",
+          "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Backend_Developer_Banner.jpg",
+          "location": "Remote",
+          "salary": "$90,000 - $115,000",
+          "jobType": "Full-time",
+          "description": "Work on building and optimizing backend systems with Node.js and PostgreSQL.",
+          "requirements": [
+            "Experience with Node.js and Express",
+            "Proficiency with PostgreSQL or MySQL",
+            "Familiarity with Docker and Kubernetes",
+            "Strong debugging and optimization skills",
+            "Experience working with cloud platforms (AWS, GCP)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Facebook",
+      "logo": "https://i.ibb.co.com/XZR4dvDY/download-1.png",
+      "location": "Menlo Park, CA, USA",
+      "website": "https://facebook.com",
+      "industry": "Social Media",
+      "jobs": [
+        {
+          "id": "job-007",
+          "title": "Product Manager",
+          "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Product_Management_Banner.jpg",
+          "location": "On-site (Menlo Park)",
+          "salary": "$80,000 - $100,000",
+          "jobType": "Full-time",
+          "description": "Lead product development and manage the roadmap for our social media platforms.",
+          "requirements": [
+            "Experience in product management",
+            "Familiarity with Agile and Scrum methodologies",
+            "Strong communication and leadership skills",
+            "Experience with social media platforms",
+            "Analytical and strategic thinking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Amazon",
+      "logo": "https://i.ibb.co.com/WpHdsC7D/download-2.png",
+      "location": "Seattle, WA, USA",
+      "website": "https://amazon.com",
+      "industry": "E-commerce",
+      "jobs": [
+        {
+          "id": "job-008",
+          "title": "Cloud Solutions Architect",
+          "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/8/88/Amazon_Cloud_Solutions_Banner.jpg",
+          "location": "Remote",
+          "salary": "$110,000 - $140,000",
+          "jobType": "Full-time",
+          "description": "Design and implement cloud solutions for enterprise clients using AWS.",
+          "requirements": [
+            "Experience with AWS services",
+            "Strong knowledge of cloud architectures",
+            "Ability to design scalable cloud solutions",
+            "Experience with serverless technologies",
+            "Excellent communication skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Slack",
+      "logo": "https://i.ibb.co.com/wvHRmBg/images-1.jpg",
+      "location": "San Francisco, CA, USA",
+      "website": "https://slack.com",
+      "industry": "Communication",
+      "jobs": [
+        {
+          "id": "job-009",
+          "title": "DevOps Engineer",
+          "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Slack_DevOps_Banner.jpg",
+          "location": "Remote",
+          "salary": "$95,000 - $120,000",
+          "jobType": "Full-time",
+          "description": "Work with engineering teams to automate infrastructure and deployment pipelines.",
+          "requirements": [
+            "Experience with AWS or GCP",
+            "Proficient with CI/CD pipelines",
+            "Scripting experience with Bash or Python",
+            "Familiarity with containerization technologies",
+            "Strong troubleshooting and problem-solving skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Spotify",
+      "logo": "https://i.ibb.co.com/zVJGqprm/download-3.png",
+      "location": "Stockholm, Sweden",
+      "website": "https://spotify.com",
+      "industry": "Music Streaming",
+      "jobs": [
+        {
+          "id": "job-010",
+          "title": "Backend Engineer",
+          "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/0/09/Spotify_Backend_Engineer_Banner.jpg",
+          "location": "Remote",
+          "salary": "$95,000 - $125,000",
+          "jobType": "Full-time",
+          "description": "Develop and maintain scalable backend systems for the Spotify platform.",
+          "requirements": [
+            "Experience with Java or Python",
+            "Knowledge of relational and NoSQL databases",
+            "Experience with microservices architectures",
+            "Proficiency with containerization (Docker, Kubernetes)",
+            "Strong problem-solving and communication skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Adobe",
+      "logo": "https://i.ibb.co.com/wFmq1Rrv/download-4.png",
+      "location": "San Jose, CA, USA",
+      "website": "https://adobe.com",
+      "industry": "Software",
+      "jobs": [
+        {
+          "id": "job-011",
+          "title": "UI/UX Designer",
+          "bannerImage": "https://upload.wikimedia.org/wikipedia/commons/6/66/UI_UX_Designer_Banner.jpg",
+          "location": "Remote",
+          "salary": "$85,000 - $110,000",
+          "jobType": "Full-time",
+          "description": "Design intuitive user interfaces and exceptional user experiences for Adobe products.",
+          "requirements": [
+            "Experience with UI/UX design tools (Figma, Sketch, Adobe XD)",
+            "Strong visual design skills",
+            "Knowledge of user-centered design principles",
+            "Proficiency in prototyping and wireframing",
+            "Ability to conduct user research and usability testing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "IBM",
+      "logo": "https://i.ibb.co.com/35rXgB0T/download-4.jpg",
+      "location": "Armonk, NY, USA",
+      "website": "https://ibm.com",
+      "industry": "Technology",
+      "jobs": [
+        {
+          "id": "job-012",
+          "title": "AI Researcher",
+          "bannerImage": "https://upload. wikimedia.org/wikipedia/commons/a/a1/AI_Researcher_Banner.jpg",
+          "location": "Remote",
+          "salary": "$100,000 - $130,000",
+          "jobType": "Full-time",
+          "description": "Conduct cutting-edge research in artificial intelligence and machine learning.",
+          "requirements": [
+            "Expertise in machine learning and AI algorithms",
+            "Proficiency in Python, TensorFlow, or PyTorch",
+            "Strong background in mathematics and statistics",
+            "Experience with deep learning frameworks",
+            "Ability to publish research in peer-reviewed journals"
+          ]
+        }
+      ]
+    }
+  ]
+  
