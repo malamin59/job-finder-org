@@ -7,7 +7,7 @@ const Card = ({ card }) => {
 
   // console.log(card)
   return (
-    <div className="bg-base-100  items-center shadow-sm flex justify-around p-3">
+    <div className="bg-base-100 lg:mb-0 mb-10 items-center shadow-sm flex justify-around p-3">
 
       <div>
         <img onClick={() => navigate(`/companyDetails/${card.id}`)} className='w-6/12 rounded'

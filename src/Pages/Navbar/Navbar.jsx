@@ -3,11 +3,21 @@ import job from '../../assets/job.png'
 import { Link, NavLink } from 'react-router';
 import './navbar.css';
 import { AuthContext } from '../../Provider/AuthProvider';
+
+
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
+
+
 const Navbar = () => {
     const { user , logOut } = use(AuthContext)
     const handleLOut=() =>{
         logOut().then(() => {
-            alert('lo out successfully')
+           toast.success('log out successfully')
         }).catch((error) => {
             console.log(error)
         });
@@ -50,6 +60,7 @@ const Navbar = () => {
 
                 }
             </div>
+            <ToastContainer position='top-center' />
         </div>
     );
 };
