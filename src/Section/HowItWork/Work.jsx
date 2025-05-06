@@ -1,11 +1,10 @@
 import React from "react";
-import Marque from "../marque/Marque";
 
 const Work = () => {
     
-  return (
-      <div>
-         {/* <Marque></Marque> */}
+    return (
+        <div>
+  
          <section 
       className="bg-gray-100 rounded py-10 px-4 md:my-16 my-16 md:px-20">
         <h2 className="text-3xl font-bold text-center mb-8">How It Works</h2>

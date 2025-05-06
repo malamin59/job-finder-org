@@ -1,11 +1,8 @@
 import React, { use } from 'react';
 import job from '../../assets/job.png'
-import { Link, NavLink } from 'react-router';
+import { Link, NavLink, useNavigate } from 'react-router';
 import './navbar.css';
 import { AuthContext } from '../../Provider/AuthProvider';
-
-
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -14,15 +11,18 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Navbar = () => {
-    const { user , logOut } = use(AuthContext)
-    const handleLOut=() =>{
+    const { user, logOut } = use(AuthContext)
+
+    const navigate = useNavigate();
+
+    const handleLOut = () => {
         logOut().then(() => {
-           toast.success('log out successfully')
+            toast.success('log out successfully')
         }).catch((error) => {
             console.log(error)
         });
     }
-    
+
     const links = <>
         <li> <NavLink to="/"> Home </NavLink> </li>
         <li> <NavLink to="/profile"> My Profile </NavLink> </li>
@@ -30,11 +30,7 @@ const Navbar = () => {
     return (
         <div className="navbar bg-base-100 shadow-sm">
 
-            <div>
-                {
-                    user && user.email
-                }
-            </div>
+
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button " className="btn btn-ghost lg:hidden">
@@ -54,13 +50,17 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end ">
+                <div className='w-12 mr-2'>
+                    <img onClick={() => navigate('/profile')}
+                        src={`${user ? user.photoURL : ''}`} alt="" />
+                </div>
                 {
-                    user ? <button onClick={handleLOut} className='btn btn-primary'> LogOut  </button> 
+                    user ? <button onClick={handleLOut} className='btn btn-primary'> LogOut  </button>
                         : <Link to="/login"><button className='btn btn-primary'> Login </button> </Link>
 
                 }
             </div>
-            <ToastContainer position='top-center' />
+            <ToastContainer position='top-right' />
         </div>
     );
 };

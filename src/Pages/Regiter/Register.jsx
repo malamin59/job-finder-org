@@ -1,13 +1,13 @@
 import React from 'react';
-import { useContext } from 'react';  
+import { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
- const { createUser, setUser } = useContext(AuthContext); 
- const location = useLocation();
- const navigate = useNavigate();
+    const { createUser, setUser, updateUser } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
     const handleRegister = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -38,12 +38,19 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 const user = result.user;
-                setUser(user);
+                updateUser({ displayName: name, photoURL: photo }).then(() => {
+
+                    setUser({ ...user, displayName: name, photoURL: photo });
+                }).catch((error) => {
+                    console.log(error)
+                    setUser(user)
+                });
+
                 toast.success("Registration successful!");
-                navigate(`${location.state?location.state : '/'}`)
+                navigate(`${location.state ? location.state : '/'}`)
             })
             .catch((error) => {
-                toast.error(error.message);
+                toast.error(error);
             });
     };
 
