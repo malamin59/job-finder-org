@@ -8,6 +8,8 @@ import CompanyDetails from "../Pages/Company/CompanyDetails";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Regiter/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import About from "../Pages/About/About";
+import Contact from "../Pages/contact/Contact";
 
 
 const router = createBrowserRouter(
@@ -46,6 +48,14 @@ const router = createBrowserRouter(
                 }, {
                     path: '/register',
                     element: <Register></Register>
+                },
+                {
+   path:'/about',
+   element:<About></About>
+                },
+                {
+                    path:'/contact',
+                    element:<Contact></Contact>
                 }
             ]
         }

@@ -4,10 +4,29 @@ import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet-async';
+import { FcGoogle } from 'react-icons/fc';
+import { signInWithPopup } from 'firebase/auth';
+import { auth } from '../../Firebase/firebase.config';
+// import app from '../../Firebase/firebase.config';
 const Register = () => {
-    const { createUser, setUser, updateUser } = useContext(AuthContext);
+    const { createUser, setUser, updateUser, provider } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
+
+
+    const handleGoogleSignIn = () => {
+        console.log("user login in to google", provider);
+        
+        signInWithPopup( auth, provider).then(result => {
+            console.log(result)
+            navigate('/')
+        }).catch(error => {
+            console.log(error)
+        })
+    }
+    
+
     const handleRegister = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -56,6 +75,7 @@ const Register = () => {
 
     return (
         <div>
+            <Helmet> <title> RegisterPage </title> </Helmet>
             <div className='flex justify-center min-h-screen items-center'>
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <div className="card-body">
@@ -72,7 +92,9 @@ const Register = () => {
 
                             <label className="label">Password</label>
                             <input type="text" className="input" placeholder="Password" name='password' />
-
+                            <button onClick={handleGoogleSignIn}
+                                type='button' className="btn  font-black w-full mt-4">
+                                <FcGoogle size={24} /> Login in with Google</button>
                             <button type='submit' className="btn btn-neutral mt-4 w-full">Register</button>
                             <p className='text-center font-semibold pt-5'>Already Have An Account?
                                 <Link className='text-secondary' to='/login'> Login </Link>

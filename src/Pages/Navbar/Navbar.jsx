@@ -25,7 +25,8 @@ const Navbar = () => {
 
     const links = <>
         <li> <NavLink to="/"> Home </NavLink> </li>
-        <li> <NavLink to="/profile"> My Profile </NavLink> </li>
+        <li> <NavLink to="/about"> About  </NavLink> </li>
+        <li> <NavLink to="/contact"> Contact </NavLink> </li>
     </>
     return (
         <div className="navbar bg-base-100 shadow-sm">
@@ -60,7 +61,7 @@ const Navbar = () => {
 
                 }
             </div>
-            <ToastContainer position='top-right' />
+            <ToastContainer position='top-center' />
         </div>
     );
 };

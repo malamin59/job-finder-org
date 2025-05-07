@@ -1,11 +1,11 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router';
 
 const Card = ({ card }) => {
 
   const navigate = useNavigate()
 
-  // console.log(card)
   return (
     <div className="bg-base-100 lg:mb-0 mb-10 items-center shadow-sm flex justify-around p-3">
 

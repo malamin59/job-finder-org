@@ -14,7 +14,8 @@ const Profile = () => {
                    <div>
                    <img src={user &&  user.photoURL} alt="" />
                    </div>
-                    <div className="card-actions justify-end">
+                    <div className="">
+                        <button></button>
                     </div>
                 </div>
             </div>
