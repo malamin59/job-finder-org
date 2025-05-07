@@ -52,16 +52,20 @@ const Navbar = () => {
             </div>
             <div className="navbar-end ">
                 <div className='w-12 mr-2'>
-                    <img onClick={() => navigate('/profile')}
+                    <img className='rounded-full' onClick={() => navigate('/profile')}
                         src={`${user ? user.photoURL : ''}`} alt="" />
                 </div>
                 {
-                    user ? '' : <Link to="/register"> <button className='btn-primary btn mr-2 lg:mr-3'> Register </button> </Link>
+                    user ? '' : <Link to="/register"> 
+                    <button className='btn-primary btn mr-2 lg:mr-3'> Register </button> </Link>
                 }
 
                 {
-                    user ? <button onClick={handleLOut} className='btn btn-primary'> LogOut  </button>
-                        : <Link to="/login"><button className='btn btn-primary'> Login </button> </Link>
+                    user ?
+                        <button onClick={handleLOut} className='btn btn-primary'>
+                            LogOut  </button>
+                        : <Link to="/login">
+                            <button className='btn btn-primary'> Login </button> </Link>
 
                 }
                 <button></button>

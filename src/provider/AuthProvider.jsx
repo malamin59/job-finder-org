@@ -19,7 +19,14 @@ const AuthProvider = ({ children }) => {
 
     const provider = new GoogleAuthProvider();
 
-
+    // const updateProfile = async (name, photoURL) => {
+    //     if (!auth.currentUser) return;
+    //     await updateProfile(auth.currentUser, {
+    //         displayName: name,
+    //         photoURL: photoURL
+    //     });
+    //     setUser({ ...auth.currentUser })
+    // }
 
     const createUser = (email, password) => {
         setLoading(true)
@@ -58,7 +65,8 @@ const AuthProvider = ({ children }) => {
         loading,
         setLoading,
         updateUser,
-        provider
+        provider,
+        updateProfile
 
     }
 

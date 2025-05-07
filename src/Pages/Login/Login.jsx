@@ -9,8 +9,8 @@ import { auth } from '../../Firebase/firebase.config';
 
 
 const Login = () => {
-        const { provider } = useContext(AuthContext);
-    
+    const { provider } = useContext(AuthContext);
+
     const [error, setError] = useState("");
     const { signIn } = use(AuthContext);
     const location = useLocation();
@@ -20,20 +20,20 @@ const Login = () => {
 
 
 
-        const handleGoogleSignIn = () => {          
-            signInWithPopup( auth,provider ).then(result => {
-                console.log(result)
-                navigate('/')
-            }).catch(error => {
-                console.log(error)
-            })
-        }
-        
+    const handleGoogleSignIn = () => {
+        signInWithPopup(auth, provider).then(result => {
+            console.log(result)
+            navigate('/')
+        }).catch(error => {
+            console.log(error)
+        })
+    }
 
 
 
 
- 
+
+
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -88,9 +88,9 @@ const Login = () => {
                         <button onClick={handleGoogleSignIn}
                             type='submit' className="btn  font-black mt-4">
                             <FcGoogle size={24} /> Login in with Google</button>
-                            <button 
-                        type='submit' className="btn btn-neutral mt-2">Login</button>
-                        
+                        <button
+                            type='submit' className="btn btn-neutral mt-2">Login</button>
+
                         <p className='text-center font-semibold pt-5'>Dont't Have An Account ?
                             <Link className='text-secondary' to='/register'> Register </Link>
                         </p>

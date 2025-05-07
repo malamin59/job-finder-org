@@ -17,15 +17,15 @@ const Register = () => {
 
     const handleGoogleSignIn = () => {
         console.log("user login in to google", provider);
-        
-        signInWithPopup( auth, provider).then(result => {
+
+        signInWithPopup(auth, provider).then(result => {
             console.log(result)
             navigate('/')
         }).catch(error => {
             console.log(error)
         })
     }
-    
+
 
     const handleRegister = (e) => {
         e.preventDefault();

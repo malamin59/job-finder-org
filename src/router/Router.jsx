@@ -10,6 +10,7 @@ import Register from "../Pages/Regiter/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import About from "../Pages/About/About";
 import Contact from "../Pages/contact/Contact";
+import UpdateProfile from "../Pages/ProfilePage/UpdateProfile";
 
 
 const router = createBrowserRouter(
@@ -34,6 +35,10 @@ const router = createBrowserRouter(
 
 
                     loader: () => fetch('/data.json'),
+                },
+                {
+path:'/updateProfile',
+element:<UpdateProfile></UpdateProfile>
                 },
                 {
                     path: '/profile',
