@@ -29,15 +29,15 @@ const router = createBrowserRouter(
                 {
                     path: '/companyDetails/:id',
                     element: <PrivateRoute>
-                         <CompanyDetails>
-                         </CompanyDetails> </PrivateRoute>,
-                
-                    
+                        <CompanyDetails>
+                        </CompanyDetails> </PrivateRoute>,
+
+
                     loader: () => fetch('/data.json'),
                 },
                 {
                     path: '/profile',
-                    element: <PrivateRoute> 
+                    element: <PrivateRoute>
 
                         <Profile>  </Profile>
                     </PrivateRoute>
@@ -50,12 +50,12 @@ const router = createBrowserRouter(
                     element: <Register></Register>
                 },
                 {
-   path:'/about',
-   element:<About></About>
+                    path: '/about',
+                    element: <About></About>
                 },
                 {
-                    path:'/contact',
-                    element:<Contact></Contact>
+                    path: '/contact',
+                    element: <Contact></Contact>
                 }
             ]
         }

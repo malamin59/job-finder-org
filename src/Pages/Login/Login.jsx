@@ -88,8 +88,9 @@ const Login = () => {
                         <button onClick={handleGoogleSignIn}
                             type='submit' className="btn  font-black mt-4">
                             <FcGoogle size={24} /> Login in with Google</button>
-                        <button 
+                            <button 
                         type='submit' className="btn btn-neutral mt-2">Login</button>
+                        
                         <p className='text-center font-semibold pt-5'>Dont't Have An Account ?
                             <Link className='text-secondary' to='/register'> Register </Link>
                         </p>

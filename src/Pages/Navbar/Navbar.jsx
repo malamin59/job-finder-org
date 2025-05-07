@@ -34,8 +34,8 @@ const Navbar = () => {
 
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button " className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                    <div tabIndex={0} role="button " className="btn p-0 btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5  w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                     </div>
                     <ul
                         tabIndex={0}
@@ -56,10 +56,15 @@ const Navbar = () => {
                         src={`${user ? user.photoURL : ''}`} alt="" />
                 </div>
                 {
+                    user ? '' : <Link to="/register"> <button className='btn-primary btn mr-2 lg:mr-3'> Register </button> </Link>
+                }
+
+                {
                     user ? <button onClick={handleLOut} className='btn btn-primary'> LogOut  </button>
                         : <Link to="/login"><button className='btn btn-primary'> Login </button> </Link>
 
                 }
+                <button></button>
             </div>
             <ToastContainer position='top-center' />
         </div>
