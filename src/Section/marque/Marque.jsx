@@ -8,7 +8,9 @@ const MyMarque = () => {
     return (
         <div>
             <div>
-      <p className='text-center lg:mt-10  text-2xl italic font-bold lg:text-3xl'>  {format( new Date(),'EEEE ,MM ,MMMM ,yyyy')} </p>
+      <p className='text-center  lg:mt-16 mt-28 mb-10  text-2xl italic font-bold lg:text-3xl'> 
+         {format( new Date(),'EEEE,dd,MMMM,yyyy')} <br />
+         </p>
    <div className='flex py-2 mt-4 items-center gap-4 bg-base-200 px-3 '>
    <h3 className='font-bold bg-primary py-2 px-3 text-amber-50'> AboutUs </h3>
    <Marquee>
@@ -18,8 +20,8 @@ const MyMarque = () => {
    </div>
 
 
-   <div className="hero bg-base-200  my-20">
-  <div className="hero-content flex-col lg:flex-row">
+   <div className="hero bg-base-200 mt-6 my-20">
+  <div className="hero-content  flex-col lg:flex-row">
     <img 
       src={MyImage}
       className="max-w-sm rounded-lg shadow-2xl w-auto lg:w-3/12"

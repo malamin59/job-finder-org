@@ -12,15 +12,6 @@ const UpdateProfile = () => {
     const [photo, setPhoto] = useState(user?.photoURL || "");
     const navigate = useNavigate();
 
-    // const handleRegister = (e) => {
-    //     e.preventDefault();
-    //     const form = e.target;
-    //     const name = form.name.value;
-    //     const photo = form.photo.value;
-    //     console.log(name, photo)
-
-    // };
-
     useEffect(() => {
         if (user) {
             setaName(user?.displayName || "")
@@ -48,7 +39,7 @@ const UpdateProfile = () => {
     return (
         <div>
 
-            <div className=" lg:mt-30   grid justify-center items-center">
+            <div className=" lg:mt-30  mt-[40%] grid justify-center items-center">
                 <form onSubmit={handleUpdate}
                     className='bg-primary  p-6 rounded'>
                     <h2 className='text-2xl

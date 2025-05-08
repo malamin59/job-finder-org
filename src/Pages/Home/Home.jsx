@@ -11,20 +11,21 @@ const Home = () => {
     const data = useLoaderData();
     // console.log(data)
     return (
-<div>
-<Helmet> <title> homePage</title> </Helmet>
-<div className='my-20'>
-            <Header></Header>
-            <Work></Work>
+        <div>
+            <Helmet> <title> homePage</title> </Helmet>
+            <div className='my-20'>
+                <Header></Header>
+                <Work></Work>
+                <h2 className=' my-10 text-3xl text-center  font-bold'> Company</h2>
+                <div className='grid lg:grid-cols-4 mb-20  md:grid-cols-2 lg:gap-4 md:gap-4 lg:pt-0 '>
 
-            <div className='grid lg:grid-cols-4 md:grid-cols-2 lg:gap-4 md:gap-4 lg:pt-0 '>
-                {
-                    data.map(card => <Card key={card.id} card={card}></Card>)
-                }  </div>
-            <ExtraSection></ExtraSection>
-            <LastSection></LastSection>
+                    {
+                        data.map(card => <Card key={card.id} card={card}></Card>)
+                    }  </div>
+                <ExtraSection></ExtraSection>
+                <LastSection></LastSection>
+            </div>
         </div>
-</div>
     );
 };
 

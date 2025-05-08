@@ -1,14 +1,17 @@
 import React, { use } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { useNavigate } from 'react-router';
+import { Helmet } from 'react-helmet-async';
 
 const Profile = () => {
     const { user } = use(AuthContext);
     const navigate = useNavigate();
     return (
-        <div className='grid items-center justify-center mt-30'>
+        <div className='grid  items-center lg:mt-[10%] justify-center mt-[40%]'>
+            <Helmet> <title>ProfilePage</title></Helmet>
+
             <div className="card grid items-center justify-center bg-base-100 w-96 shadow-sm">
-                <div className="card-body">
+                <div className="card-body bg-base-200 rounded">
                     <h2 className="card-title">  {
                         user && user.displayName
                     }</h2>

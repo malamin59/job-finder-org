@@ -7,8 +7,8 @@ const Card = ({ card }) => {
   const navigate = useNavigate()
 
   return (
-    <div className="bg-base-100 lg:mb-0 mb-10 items-center shadow-sm flex justify-around p-3">
-
+    <div className="bg-base-100 lg:mb-0 mb-6 items-center shadow-sm flex justify-around p-3">
+ 
       <div>
         <img onClick={() => navigate(`/companyDetails/${card.id}`)} className='w-6/12 rounded'
           src={card.logo}

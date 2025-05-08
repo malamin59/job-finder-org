@@ -29,7 +29,7 @@ const Navbar = () => {
         <li> <NavLink to="/contact"> Contact </NavLink> </li>
     </>
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar lg:-mb-8 -mb-18 bg-base-100 shadow-sm">
 
 
             <div className="navbar-start">
