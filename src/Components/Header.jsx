@@ -1,7 +1,6 @@
 import React from 'react';
 import banner from '../../src/assets/banner.png'
 import Motion from './Motion';
-// import Motion from './Motion';
 const Header = () => {
     return (
         <div>

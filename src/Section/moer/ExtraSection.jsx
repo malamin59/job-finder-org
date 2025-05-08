@@ -1,11 +1,17 @@
 import React from 'react';
 import Banner2 from '../../assets/bennar2.jpg.avif'
+import Marquee from 'react-fast-marquee';
 
 
 const ExtraSection = () => {
     return (
         <div>
             <h2 className='text-center font-bold text-3xl mb-6'> We Wait You </h2>
+            <Marquee> <p className='mb-3'>
+                Andrei combines academic knowledge with over 10 years of practical experience to help job seekers navigate the challenges of resumes, interviews, and career growth. Through the Novorésumé Career Blog, he offers actionable advice to simplify and ace the job search process.
+            </p>
+
+            </Marquee>
             <section className="dark:bg-gray-100  dark:text-gray-800">
                 <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-16 lg:flex-row lg:justify-between">
                     <div className="flex  items-center justify-center mt-8 lg:mt-0  sm:h-80 lg:h-96 xl:h-112 2xl:h-128">

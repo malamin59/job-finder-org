@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router';
 import { updateProfile } from 'firebase/auth';
 import { auth } from '../../Firebase/firebase.config';
 import { toast } from 'react-toastify';
+import { Helmet } from 'react-helmet-async';
 
 const UpdateProfile = () => {
 
@@ -38,7 +39,7 @@ const UpdateProfile = () => {
 
     return (
         <div>
-
+<Helmet> <title>Update-ProfilePage</title> </Helmet>
             <div className=" lg:mt-30  mt-[40%] grid justify-center items-center">
                 <form onSubmit={handleUpdate}
                     className='bg-primary  p-6 rounded'>
@@ -80,4 +81,3 @@ const UpdateProfile = () => {
 export default UpdateProfile;
 
 
-/* https://www.youtube.com/watch?v=CHGHuF24Cjw&pp=ygUccmVhY3QgZnJhbWVyIG1vdGlvbiBsYW1hIGRldg%3D%3D */

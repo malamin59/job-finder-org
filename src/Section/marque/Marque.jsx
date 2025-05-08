@@ -3,6 +3,10 @@ import React from 'react';
 import Marquee from "react-fast-marquee";
 // import MyImage from '../../assets/myimage.jpg'
 //  import OurImage from '../../assets/OuImage.jpg.avif'
+import alamin1 from '../../assets/alamin1.jpeg'
+import alamin2 from '../../assets/alamin2.jpeg'
+import alamin3 from '../../assets/alamin3.jpeg'
+import alamin4 from '../../assets/alamin4.jpg'
 import OurImage from '../../assets/img.webp'
 import { useNavigate } from 'react-router';
 const MyMarque = () => {
@@ -22,7 +26,7 @@ const MyMarque = () => {
    </div>
 
 
-   <div className="hero bg-base-200 mt-6 my-20">
+   <div className="hero bg-base-200 mt-6">
   <div className="hero-content  flex-col lg:flex-row">
     <img 
       src={OurImage}
@@ -36,6 +40,70 @@ const MyMarque = () => {
       <button onClick={() => navigate('/')} className="btn btn-primary">Get Started</button>
     </div>
   </div>
+</div>
+
+   <h1 className='text-4xl font-bold text-center my-12'>More About us</h1>
+<div className='grid lg:grid-cols-4 my-16 gap-5'>
+
+<div className="card bg-base-100  shadow-sm">
+  <figure>
+    <img
+      src={alamin1}
+      alt="Shoes" />
+  </figure>
+  
+  <div className="card-body">
+    <h2 className="card-title">Contact Us</h2>
+    <p>Explore top government and private job opportunities in Bangladesh with Alljobs by Teletalk, the ultimate platform for job seekers and recruiters.</p>
+    <div className="card-actions justify-end">
+      <button onClick={() => navigate('/')}
+      className="btn btn-primary">Get Start</button>
+    </div>
+  </div>
+</div>
+<div className="card bg-base-100  shadow-sm">
+  <figure>
+    <img
+      src={alamin2}
+      alt="Shoes" />
+  </figure>
+  <div className="card-body">
+    <h2 className="card-title"> About job </h2>
+    <p>Skill Jobs is a popular job site and a comprehensive career solutions provider. Our paid membership offers a complete career guide with step-by-step directions .</p>
+    <div className="card-actions justify-end">
+      <button onClick={() => navigate('/')}
+      className="btn btn-primary">Get Start</button>
+    </div>
+  </div>
+</div><div className="card bg-base-100  shadow-sm">
+  <figure>
+    <img
+      src={alamin3}
+      alt="Shoes" />
+  </figure>
+  <div className="card-body">
+    <h2 className="card-title">Call Us </h2>
+    <p>Find your dream job in Bangladesh with Job Media. Search, apply & get hired fast. Explore top job openings across industries today!</p>
+    <div className="card-actions justify-end">
+      <button onClick={() => navigate('/')}
+      className="btn btn-primary">Get Start</button>
+    </div>
+  </div>
+</div><div className="card bg-base-100  shadow-sm">
+  <figure>
+    <img
+      src={alamin4}
+      alt="Shoes" />
+  </figure>
+  <div className="card-body">
+    <h2 className="card-title">Got you </h2>
+    <p>Explore all the current vacancies from all the top employers and the leading job boards. Daily publisher of latest jobs </p>
+    <div className="card-actions justify-end">
+      <button onClick={() => navigate('/')}
+      className="btn btn-primary">Get Start</button>
+    </div>
+  </div>
+</div>
 </div>
             </div>
         </div>

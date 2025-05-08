@@ -2,7 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet-async';
 import { FcGoogle } from 'react-icons/fc';
@@ -62,7 +62,7 @@ const Register = () => {
                 updateUser({ displayName: name, photoURL: photo }).then(() => {
 
                     setUser({ ...user, displayName: name, photoURL: photo });
-                    toast('')
+                    // toast('')
                 }).catch((error) => {
                     console.log(error)
                     setUser(user)
@@ -108,7 +108,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
-            <ToastContainer position='top-center' />
+           
         </div>
     );
 };
