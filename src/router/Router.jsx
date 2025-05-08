@@ -11,6 +11,7 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import About from "../Pages/About/About";
 import Contact from "../Pages/contact/Contact";
 import UpdateProfile from "../Pages/ProfilePage/UpdateProfile";
+import ForgatPassword from "../Pages/Login/ForgatPassword";
 
 
 const router = createBrowserRouter(
@@ -37,8 +38,8 @@ const router = createBrowserRouter(
                     loader: () => fetch('/data.json'),
                 },
                 {
-path:'/updateProfile',
-element:<UpdateProfile></UpdateProfile>
+                    path: '/updateProfile',
+                    element: <UpdateProfile></UpdateProfile>
                 },
                 {
                     path: '/profile',
@@ -61,6 +62,10 @@ element:<UpdateProfile></UpdateProfile>
                 {
                     path: '/contact',
                     element: <Contact></Contact>
+                },
+                {
+                    path:'/forgatPassword',
+                    element:<ForgatPassword></ForgatPassword>
                 }
             ]
         }

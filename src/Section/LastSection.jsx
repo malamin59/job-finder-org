@@ -4,8 +4,9 @@ import Banner from '../assets/bennar3.png'
 const LastSection = () => {
     return (
         <div>
-
-            <div className="  bg-base-200 my-16">
+<h2 className='text-3xl font-bold text-center my-10'> Create Your future </h2>
+            <div className="  bg-base-200">
+                
                 <div className="lg:flex gap-5 p-6 items-center justify-center">
                     <img
                         src={Banner}

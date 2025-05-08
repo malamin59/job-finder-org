@@ -16,11 +16,13 @@ const Register = () => {
 
 
     const handleGoogleSignIn = () => {
-        console.log("user login in to google", provider);
+        // console.log("user login in to google", provider);
 
         signInWithPopup(auth, provider).then(result => {
             console.log(result)
             navigate('/')
+            toast.success('Registration Successfully')
+
         }).catch(error => {
             console.log(error)
         })
@@ -60,16 +62,19 @@ const Register = () => {
                 updateUser({ displayName: name, photoURL: photo }).then(() => {
 
                     setUser({ ...user, displayName: name, photoURL: photo });
+                    toast('')
                 }).catch((error) => {
                     console.log(error)
                     setUser(user)
                 });
 
                 toast.success("Registration successful!");
+
+            
                 navigate(`${location.state ? location.state : '/'}`)
             })
             .catch((error) => {
-                toast.error(error);
+                console.log(error);
             });
     };
 
@@ -103,7 +108,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
-            <ToastContainer position='top-right' />
+            <ToastContainer position='top-center' />
         </div>
     );
 };

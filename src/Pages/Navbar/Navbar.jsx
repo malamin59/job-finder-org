@@ -1,6 +1,6 @@
 import React, { use } from 'react';
 import job from '../../assets/job.png'
-import { Link, NavLink, useNavigate } from 'react-router';
+import { Link, NavLink} from 'react-router';
 import './navbar.css';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
@@ -12,8 +12,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
     const { user, logOut } = use(AuthContext)
-
-    const navigate = useNavigate();
 
     const handleLOut = () => {
         logOut().then(() => {
@@ -51,13 +49,16 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end ">
-                <div className='w-12 mr-2'>
-                    <img className='rounded-full' onClick={() => navigate('/profile')}
+
+                <Link to='profile'>
+                    <img className='rounded-full w-12 mr-2'
                         src={`${user ? user.photoURL : ''}`} alt="" />
-                </div>
+
+                </Link>
+
                 {
-                    user ? '' : <Link to="/register"> 
-                    <button className='btn-primary btn mr-2 lg:mr-3'> Register </button> </Link>
+                    user ? '' : <Link to="/register">
+                        <button className='btn-primary btn mr-2 lg:mr-3'> Register </button> </Link>
                 }
 
                 {

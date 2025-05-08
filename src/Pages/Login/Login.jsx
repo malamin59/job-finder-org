@@ -5,8 +5,8 @@ import { Helmet } from 'react-helmet-async';
 import { FcGoogle } from "react-icons/fc";
 import { signInWithPopup } from 'firebase/auth';
 import { auth } from '../../Firebase/firebase.config';
-
-
+import { toast } from 'react-toastify';
+   
 
 const Login = () => {
     const { provider } = useContext(AuthContext);
@@ -16,35 +16,26 @@ const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
     //    console.log(location)
-
-
-
-
     const handleGoogleSignIn = () => {
         signInWithPopup(auth, provider).then(result => {
             console.log(result)
+            toast.success('log in successfully!')
             navigate('/')
         }).catch(error => {
             console.log(error)
         })
     }
-
-
-
-
-
-
-
     const handleLogin = (e) => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+        // console.log(email, password);
         signIn(email, password)
             .then(result => {
                 const user = result.user;
-                console.log(user);
+                // console.log(user);
+                toast.success('log in successfully!')
                 navigate(`${location.state ? location.state : '/'}`)
 
             }).catch((error) => {
@@ -81,7 +72,13 @@ const Login = () => {
                             placeholder="Password"
                             required
                         />
-                        <div><a className="link link-hover"> Forgot password?</a></div>
+
+                        <div>
+                            <Link className='underline' to='/forgatPassword'>
+
+                                Forgot password?
+                            </Link>
+                        </div>
                         {
                             error && <p className='text-red-600'> {error}</p>
                         }

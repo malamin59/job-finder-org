@@ -1,7 +1,9 @@
 import { format } from 'date-fns';
 import React from 'react';
 import Marquee from "react-fast-marquee";
-import MyImage from '../../assets/myimage.jpg'
+// import MyImage from '../../assets/myimage.jpg'
+//  import OurImage from '../../assets/OuImage.jpg.avif'
+import OurImage from '../../assets/img.webp'
 import { useNavigate } from 'react-router';
 const MyMarque = () => {
     const navigate  = useNavigate()
@@ -23,7 +25,7 @@ const MyMarque = () => {
    <div className="hero bg-base-200 mt-6 my-20">
   <div className="hero-content  flex-col lg:flex-row">
     <img 
-      src={MyImage}
+      src={OurImage}
       className="max-w-sm rounded-lg shadow-2xl w-auto lg:w-3/12"
     />
     <div>
