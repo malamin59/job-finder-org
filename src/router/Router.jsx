@@ -32,10 +32,9 @@ const router = createBrowserRouter(
                     path: '/companyDetails/:id',
                     element: <PrivateRoute>
                         <CompanyDetails>
-                        </CompanyDetails> </PrivateRoute>,
-
-
-                    loader: () => fetch('/data.json'),
+                        </CompanyDetails>
+                    </PrivateRoute>,
+                        loader: () => fetch('/data.json'),
                 },
                 {
                     path: '/updateProfile',
@@ -64,8 +63,8 @@ const router = createBrowserRouter(
                     element: <Contact></Contact>
                 },
                 {
-                    path:'/forgatPassword',
-                    element:<ForgatPassword></ForgatPassword>
+                    path: '/forgatPassword',
+                    element: <ForgatPassword></ForgatPassword>
                 }
             ]
         }

@@ -1,11 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { AuthContext } from '../../Provider/AuthProvider';
 import { useNavigate } from 'react-router';
 import { updateProfile } from 'firebase/auth';
 import { auth } from '../../Firebase/firebase.config';
 import { toast } from 'react-toastify';
 import { Helmet } from 'react-helmet-async';
-
+import { AuthContext } from '../../provider/AuthProvider';
 const UpdateProfile = () => {
 
     const { user } = useContext(AuthContext);
